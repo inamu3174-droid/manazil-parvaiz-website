@@ -1,11 +1,12 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import AuthorSection from "../components/AuthorSection";
+import WhyIWrite from "../components/WhyIWrite";
 import Collection from "../components/Collection";
 import Themes from "../components/Themes";
 import FeaturedBook from "../components/FeaturedBook";
+import WordsReflections from "../components/WordsReflections";
 import Journal from "../components/Journal";
-import Quote from "../components/Quote";
 import Purchase from "../components/Purchase";
 import Newsletter from "../components/Newsletter";
 import Contact from "../components/Contact";
@@ -18,11 +19,16 @@ export default function Home() {
       <main>
         <Hero />
         <AuthorSection />
+        <div id="why">
+          <WhyIWrite />
+        </div>
         <Collection />
         <Themes />
         <FeaturedBook />
+        <div id="reflections">
+          <WordsReflections />
+        </div>
         <Journal />
-        <Quote />
         <Purchase />
         <Newsletter />
         <Contact />
