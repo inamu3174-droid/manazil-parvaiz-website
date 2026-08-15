@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail } from "lucide-react";
+import { Mail, Phone, Instagram } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -20,27 +20,34 @@ export default function Contact() {
             For press, collaboration, speaking, or simply to share a thought —
             reach out.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+
+          <div className="flex flex-col items-center gap-5">
             <a
-              href="mailto:hello@example.com"
+              href="mailto:manazilparvaiz19@gmail.com"
               className="inline-flex items-center gap-2 text-sm tracking-wide text-warm-black hover:text-burgundy transition-colors"
             >
               <Mail size={16} />
-              <span>hello@example.com</span>
+              <span>manazilparvaiz19@gmail.com</span>
             </a>
-            <span className="hidden sm:inline text-stone-300">|</span>
-            <div className="flex gap-6 text-xs tracking-widest uppercase text-muted-gray">
-              <a href="#" className="hover:text-warm-black transition-colors">
-                Instagram
-              </a>
-              <a href="#" className="hover:text-warm-black transition-colors">
-                X / Twitter
-              </a>
-            </div>
+
+            <a
+              href="tel:+919149906624"
+              className="inline-flex items-center gap-2 text-sm tracking-wide text-warm-black hover:text-burgundy transition-colors"
+            >
+              <Phone size={16} />
+              <span>+91 91499 06624</span>
+            </a>
+
+            <a
+              href="https://instagram.com/ofc.manazil"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm tracking-wide text-warm-black hover:text-burgundy transition-colors"
+            >
+              <Instagram size={16} />
+              <span>@ofc.manazil</span>
+            </a>
           </div>
-          <p className="mt-8 text-xs text-stone-400">
-            Email and social links are placeholders — configure with real details.
-          </p>
         </motion.div>
       </div>
     </section>
