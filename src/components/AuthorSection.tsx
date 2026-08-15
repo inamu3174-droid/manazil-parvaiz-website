@@ -6,19 +6,18 @@ export default function AuthorSection() {
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
           <motion.div
-            className="relative aspect-[3/4] max-w-md mx-auto md:mx-0 bg-stone-200 overflow-hidden"
+            className="relative aspect-[3/4] max-w-md mx-auto md:mx-0 overflow-hidden shadow-2xl"
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-stone-300 via-stone-200 to-dusty-rose/40 flex items-center justify-center">
-              <div className="text-center text-stone-500">
-                <div className="w-24 h-24 rounded-full bg-stone-400/50 mx-auto mb-4" />
-                <p className="text-xs tracking-widest uppercase">Author Portrait</p>
-                <p className="text-xs mt-1 opacity-60">Placeholder</p>
-              </div>
-            </div>
+            <img
+              src="/author-portrait.jpg"
+              alt="Manazil Parvaiz — Author"
+              className="absolute inset-0 w-full h-full object-cover object-center"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
           </motion.div>
 
           <motion.div
@@ -41,17 +40,20 @@ export default function AuthorSection() {
               and loss, the masks we wear, silent courage, and the space between
               who we were and who we are becoming.
             </p>
-            <p className="text-muted-gray leading-relaxed mb-8">
-              Her writing is introspective, emotionally precise, and rooted in
+            <p className="text-muted-gray leading-relaxed mb-4">
+              His writing is introspective, emotionally precise, and rooted in
               the lived realities of today's generation. Through prose and
-              poetry, she gives language to the quiet interior lives that rarely
+              poetry, he gives language to the quiet interior lives that rarely
               make it into everyday conversation.
+            </p>
+            <p className="text-xs tracking-[0.2em] uppercase text-burgundy mb-8">
+              Writer · Observer · Dreamer
             </p>
             <a
               href="#about"
               className="inline-flex items-center text-sm tracking-widest uppercase text-burgundy hover:text-warm-black transition-colors group"
             >
-              Discover Her Story
+              Discover His Story
               <span className="ml-2 group-hover:translate-x-1 transition-transform">
                 →
               </span>
