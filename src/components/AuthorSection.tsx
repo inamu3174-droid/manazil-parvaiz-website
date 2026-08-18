@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 
-const PORTRAIT = "https://i.imgur.com/JJ5mrDo.jpeg";
-
 export default function AuthorSection() {
   return (
     <section id="author" className="py-24 md:py-32 bg-ivory">
@@ -15,7 +13,7 @@ export default function AuthorSection() {
             transition={{ duration: 0.8 }}
           >
             <img
-              src={PORTRAIT}
+              src="/author-portrait.jpg"
               alt="Manazil Parvaiz — Author"
               className="absolute inset-0 w-full h-full object-cover object-center"
             />

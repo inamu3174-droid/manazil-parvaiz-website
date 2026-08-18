@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 
-const PORTRAIT = "https://i.imgur.com/JJ5mrDo.jpeg";
-
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden grain">
@@ -69,7 +67,7 @@ export default function Hero() {
         >
           <div className="relative w-full max-w-md aspect-[3/4] overflow-hidden shadow-2xl bg-stone-900">
             <img
-              src={PORTRAIT}
+              src="/author-portrait.jpg"
               alt="Manazil Parvaiz"
               className="absolute inset-0 w-full h-full object-cover object-center"
             />
