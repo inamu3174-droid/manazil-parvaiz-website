@@ -37,7 +37,7 @@ export default function WordsReflections() {
           {reflections.map((item, i) => (
             <motion.blockquote
               key={i}
-              className="border border-stone-200 bg-ivory p-8 md:p-10 hover:border-stone-400 transition-colors duration-400"
+              className="border border-stone-200 bg-ivory p-8 md:p-10 hover:border-stone-400 transition-colors duration-300"
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
