@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 
+const PORTRAIT = "https://i.imgur.com/JJ5mrDo.jpeg";
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden grain">
@@ -7,7 +9,6 @@ export default function Hero() {
       <div className="absolute top-1/3 right-0 w-[50%] h-[60%] bg-gradient-to-l from-dusty-rose/8 to-transparent rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-10 w-full grid lg:grid-cols-2 gap-14 lg:gap-16 items-center">
-        {/* Text */}
         <div className="z-10 order-2 lg:order-1">
           <motion.p
             className="text-xs tracking-[0.35em] uppercase text-muted-gray mb-5"
@@ -60,16 +61,15 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* Portrait */}
         <motion.div
           className="relative order-1 lg:order-2 flex justify-center lg:justify-end"
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.4, duration: 1 }}
         >
-          <div className="relative w-full max-w-md aspect-[3/4] overflow-hidden shadow-2xl">
+          <div className="relative w-full max-w-md aspect-[3/4] overflow-hidden shadow-2xl bg-stone-900">
             <img
-              src="/author-portrait.jpg"
+              src={PORTRAIT}
               alt="Manazil Parvaiz"
               className="absolute inset-0 w-full h-full object-cover object-center"
             />

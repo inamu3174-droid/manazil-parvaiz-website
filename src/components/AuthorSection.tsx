@@ -1,19 +1,21 @@
 import { motion } from "framer-motion";
 
+const PORTRAIT = "https://i.imgur.com/JJ5mrDo.jpeg";
+
 export default function AuthorSection() {
   return (
     <section id="author" className="py-24 md:py-32 bg-ivory">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
           <motion.div
-            className="relative aspect-[3/4] max-w-md mx-auto md:mx-0 overflow-hidden shadow-2xl"
+            className="relative aspect-[3/4] max-w-md mx-auto md:mx-0 overflow-hidden shadow-2xl bg-stone-900"
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.8 }}
           >
             <img
-              src="/author-portrait.jpg"
+              src={PORTRAIT}
               alt="Manazil Parvaiz — Author"
               className="absolute inset-0 w-full h-full object-cover object-center"
             />
