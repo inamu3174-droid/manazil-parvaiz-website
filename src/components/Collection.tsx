@@ -39,18 +39,14 @@ export default function Collection() {
             return (
               <motion.article
                 key={book.id}
-                className={`grid md:grid-cols-2 gap-10 md:gap-16 items-center ${
-                  reverse ? "md:direction-rtl" : ""
-                }`}
+                className={`grid md:grid-cols-2 gap-10 md:gap-16 items-center`}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.7 }}
               >
                 <div
-                  className={`flex justify-center ${
-                    reverse ? "md:order-2" : "md:order-1"
-                  }`}
+                  className={`flex justify-center ${reverse ? "md:order-2" : "md:order-1"}`}
                 >
                   <Link to={`/book/${book.id}`} className="block">
                     <BookCover book={book} size="lg" />
@@ -58,9 +54,7 @@ export default function Collection() {
                 </div>
 
                 <div
-                  className={`${reverse ? "md:order-1" : "md:order-2"} ${
-                    reverse ? "md:text-right" : ""
-                  }`}
+                  className={`${reverse ? "md:order-1 md:text-right" : "md:order-2"}`}
                 >
                   <p className="text-xs tracking-[0.25em] uppercase text-muted-gray mb-3">
                     {themeLabels[book.atmosphere]}
@@ -71,16 +65,13 @@ export default function Collection() {
                   <p className="text-sm text-muted-gray italic mb-5">
                     {book.subtitle}
                   </p>
-                  <p className="text-muted-gray leading-relaxed mb-8 max-w-md ${
-                    reverse ? "md:ml-auto" : ""
-                  }`}
+                  <p
+                    className={`text-muted-gray leading-relaxed mb-8 max-w-md ${reverse ? "md:ml-auto" : ""}`}
                   >
                     {book.shortDescription}
                   </p>
                   <div
-                    className={`flex flex-wrap gap-4 ${
-                      reverse ? "md:justify-end" : ""
-                    }`}
+                    className={`flex flex-wrap gap-4 ${reverse ? "md:justify-end" : ""}`}
                   >
                     <Link
                       to={`/book/${book.id}`}
